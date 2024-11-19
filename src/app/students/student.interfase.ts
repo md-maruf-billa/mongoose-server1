@@ -12,4 +12,7 @@ export type Student = {
   role: number;
   parentInfo: Parent;
   phoneNumber: string;
+  bloodGroup: 'A+' | 'A-' | 'B+' | 'B-' | 'O+' | 'O-' | 'AB+' | 'AB-';
+  accountStatus: 'active' | 'disabled';
+  gender: 'Male' | 'Female' | 'Other';
 };

@@ -11,10 +11,11 @@ const createStudentAccount = async (req: Request, res: Response) => {
       massage: 'Data successfully saved',
       data: result,
     });
-  } catch (err) {
+  } catch (err: any) {
     res.status(500).json({
       success: false,
-      massage: 'Internal server error' + err,
+      massage: 'Internal server error',
+      error: err,
     });
   }
 };
